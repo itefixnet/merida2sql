@@ -1,19 +1,19 @@
 # merida2sql - Dump Merida to SQL
 
-NAME
+## NAME
    merida2sql - Dump Merida to SQL
 
-SYNOPSIS
+## SYNOPSIS
    merida2sql --definition *Merida database definition file* --dumpdirectory
    *Merida dump directory* --targetdirectory *SQL dump directory* --database
    *SQL database name* [--verbose] [--help]
 
-DESCRIPTION
+## DESCRIPTION
    merida2sql creates an SQL equivalent of a Merida dump directory. The
    result directory can be packed and sent to the vendor for migration from
    Merida.
 
-OPTIONS
+## OPTIONS
    --definition *Merida database definition file*
        Required. A Merida database definition file describes the database
        structure used by Merida and will be used to interpret the
@@ -58,7 +58,7 @@ OPTIONS
    --help
        Produces help message.
 
-EXAMPLE
+## EXAMPLE
     merida2sql.pl --def d:\temp\merida\merida-db.def --dump d:\temp\merida --target d:\temp\sql --database test --verbose
 
    Loads Merida database definitions from *d:\temp\merida\merida-db.def*,
@@ -68,21 +68,21 @@ EXAMPLE
    by bulk updates. Creates also a small README.txt file to describe steps
    to be taken at the vendor side.
 
-EXIT VALUES
+## EXIT VALUES
     0 Normal termination
     1 Invalid argument
     2 Missing argument
 
-AUTHOR
+## AUTHOR
    Tevfik Karagulle, Oslo universitetssykehus, OSS MTV
 
-COPYRIGHT
+## COPYRIGHT
    Oslo universitetssykehus, 2016
 
-VERSION
+## VERSION
    Version 6 November 2016
 
-CHANGELOG
+## CHANGELOG
    version 6, nov 2016
         - More documentation and verbose output
         - Create a README file
